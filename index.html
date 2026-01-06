@@ -59,14 +59,14 @@
     <section class="max-w-4xl mx-auto px-4 mb-16">
         <h2 class="text-2xl font-bold mb-4 border-b pb-2">Abstract</h2>
         <p class="text-gray-700 leading-relaxed text-justify">
-            Immersive telepresence aims to transform human interaction in AR/VR applications by enabling lifelike full-body holographic representations for enhanced remote collaboration.
-            However, existing systems rely on hardware-intensive multi-camera setups and demand high bandwidth for volumetric streaming, limiting their real-time performance on mobile devices.
-            To overcome these challenges, we propose <strong>Mon3tr</strong>, a novel test-time <ins>Mon</ins>ocular <ins>3</ins>D <ins>t</ins>elep<ins>r</ins>esence framework that integrates 3D Gaussian Splatting (3DGS) based parametric human modeling into telepresence for the first time.
-            Mon3tr adopts an amortized computation strategy, dividing the process into a one-time offline multi-view reconstruction phase to build a user-specific avatar and a monocular online inference phase during live telepresence sessions.
-            Using a single monocular RGB camera, it captures body motions and facial expressions in real time via the SMPL-X model, significantly reducing system complexity and cost.
-            The extracted motion and appearance features are transmitted at < 0.2 Mbps over WebRTC’s data channel, allowing robust adaptation to network fluctuations.
-            On the receiver side (e.g., Meta Quest 3), lightweight geometry-aware MLPs dynamically generate corrective 3DGS attribute adjustments on the pre-built avatar, synthesizing photorealistic motion and appearance at ~ 60 FPS.
-            Extensive experiments demonstrate the state-of-the-art performance of our method, achieving > 28 dB PSNR for novel poses, ~ 80 ms end-to-end latency, and > 1000× bandwidth reduction compared to point-cloud streaming, while supporting real-time operation from monocular inputs across diverse scenarios.
+            Immersive telepresence aims to transform human interaction in AR/VR applications by enabling lifelike full-body holographic representations for enhanced remote collaboration. 
+            However, existing systems rely on hardware-intensive multi-camera setups and demand high bandwidth for volumetric streaming, limiting their real-time performance on mobile devices. 
+            To overcome these challenges, we propose <strong>Mon3tr</strong>, a novel test-time <strong><u>Mon</u></strong>ocular <strong><u>3</u></strong>D <strong><u>t</u></strong>elep<strong><u>r</u></strong>esence framework that integrates 3D Gaussian splatting (3DGS) based parametric human modeling into telepresence for the first time. 
+            Mon3tr adopts an amortized computation strategy, dividing the process into a one-time offline multi-view reconstruction phase to build a user-specific avatar and a monocular online inference phase during live telepresence sessions. 
+            Using a single monocular RGB camera, it captures body motions and facial expressions in real time to drive the 3DGS-based parametric human model, significantly reducing system complexity and cost. 
+            The extracted motion and appearance features are transmitted at &lt;0.2 Mbps over WebRTC’s data channel, allowing robust adaptation to network fluctuations. 
+            On the receiver side, e.g., Meta Quest 3, we develop a lightweight 3DGS attribute deformation network to dynamically generate corrective 3DGS attribute adjustments on the pre-built avatar, synthesizing photorealistic motion and appearance at &sim; 60 FPS. 
+            Extensive experiments demonstrate the state-of-the-art performance of our method, achieving a PSNR of &gt;28 dB for novel poses, an end-to-end latency of &sim; 80 ms, and &gt;1000&times; bandwidth reduction compared to point-cloud streaming, while supporting real-time operation from monocular inputs across diverse scenarios.
         </p>
     </section>
 
