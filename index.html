@@ -145,32 +145,44 @@
         <h2 class="text-2xl font-bold mb-6 border-b pb-2">PC Demos</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div class="flex flex-col">
+        <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden relative">
+            <span class="absolute top-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded z-10 pointer-events-none">Demo 1-1</span>
             
-            <div class="flex flex-col">
-                <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden relative">
-                    <span class="absolute top-2 left-2 bg-black/50 text-white text-xs px-2 py-1 rounded">Demo 1-1</span>
-                    <div class="w-full h-full flex items-center justify-center text-white/50">Demo Video 1</div>
-                </div>
-                <p class="text-center mt-2 text-sm font-medium">Demo Video 1-1</p>
-            </div>
-
-            <div class="flex flex-col">
-                <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden relative">
-                    <span class="absolute top-2 left-2 bg-blue-600/80 text-white text-xs px-2 py-1 rounded">Demo 1-2</span>
-                    <div class="w-full h-full flex items-center justify-center text-white/50">Demo Video 2</div>
-                </div>
-                <p class="text-center mt-2 text-sm font-medium">Demo Video 1-2</p>
-            </div>
-
-            <div class="flex flex-col">
-                <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden relative">
-                    <span class="absolute top-2 left-2 bg-red-600/80 text-white text-xs px-2 py-1 rounded">Demo 1-3</span>
-                    <div class="w-full h-full flex items-center justify-center text-white/50">Demo Video 3</div>
-                </div>
-                <p class="text-center mt-2 text-sm font-medium">Demo Video 1-3</p>
-            </div>
-
+            <video class="w-full h-full object-cover" controls playsinline preload="metadata">
+                <source src="./v1.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
         </div>
+        <p class="text-center mt-2 text-sm font-medium">Demo Video 1-1</p>
+    </div>
+
+    <div class="flex flex-col">
+        <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden relative">
+            <span class="absolute top-2 left-2 bg-blue-600/80 text-white text-xs px-2 py-1 rounded z-10 pointer-events-none">Demo 1-2</span>
+            
+            <video class="w-full h-full object-cover" controls playsinline preload="metadata">
+                <source src="./assets/v2.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+        <p class="text-center mt-2 text-sm font-medium">Demo Video 1-2</p>
+    </div>
+
+    <div class="flex flex-col">
+        <div class="aspect-video bg-gray-800 rounded-lg overflow-hidden relative">
+            <span class="absolute top-2 left-2 bg-red-600/80 text-white text-xs px-2 py-1 rounded z-10 pointer-events-none">Demo 1-3</span>
+            
+            <video class="w-full h-full object-cover" controls playsinline preload="metadata">
+                <source src="./v3.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+        <p class="text-center mt-2 text-sm font-medium">Demo Video 1-3</p>
+    </div>
+
+</div>
 
         <br>
 
